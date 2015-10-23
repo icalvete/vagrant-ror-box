@@ -29,13 +29,13 @@ python-software-properties \
 libffi-dev \
 libgdm-dev \
 libncurses5-dev \
-libmysqlclient-dev \
 automake \
 autoconf \
 libtool \
 bison \
+libpq-dev \
+libmysqlclient-dev \
 libc6-dev \
-nodejs \
 bzip2 \
 vim \
 software-properties-common \
@@ -43,6 +43,8 @@ python-software-properties \
 -y
 
 sudo add-apt-repository ppa:chris-lea/node.js -y
+sudo apt-get --ignore-missing install nodejs -y
+
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
