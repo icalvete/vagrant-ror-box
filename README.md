@@ -46,13 +46,13 @@ You can add the box right now to your vagrant
 
 ### Loading the box
 
-#### Loading the box to your vagrant
+#### Loading the box to your vagrant (Not recomended)
 
 ```bash
 icalvete@dagon ~/vagrant-ror-box$ vagrant box add ror ror.box
 ```
 
-#### Loading the box to vagrantcloud
+#### Loading the box to vagrantcloud (Recomended)
 
 But maybe you prefer share your box with other people.
 
