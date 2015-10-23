@@ -4,7 +4,7 @@
 #
 # Based on https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04
 
-sudo  apt-get update -y
+sudo apt-get update -y
 
 sudo apt-get --ignore-missing install \
 build-essential \
@@ -43,6 +43,7 @@ python-software-properties \
 -y
 
 sudo add-apt-repository ppa:chris-lea/node.js -y
+sudo apt-get update -y
 sudo apt-get --ignore-missing install nodejs -y
 
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
