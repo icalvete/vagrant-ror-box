@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "ror"
 
   config.vm.provision :shell do |shell|
-    shell.path = "https://raw.githubusercontent.com/icalvete/vagrantfiles/master/ror/installing_ruby_on_rails_ubuntu_trusty.sh"
+    shell.path = "https://raw.githubusercontent.com/icalvete/vagrant-ror-box/master/installing_ruby_on_rails_ubuntu_trusty.sh"
     shell.privileged = false
   end
 
