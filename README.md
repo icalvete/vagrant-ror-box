@@ -60,7 +60,7 @@ In this case, use [vagrantcloud.com](http://vagrantcloud.com) to upload there yo
 
 1. Create and account
 2. Use the top menu to got to vagrant section
-![alt tag](https://raw.githubusercontent.com/icalvete/vagrant-ror-box/master/doc/topmenu.jpeg)
+![alt tag](https://raw.githubusercontent.com/icalvete/vagrant-ror-box/master/doc/topmenu.jpg)
 3. Use the buton **Create a Vagrant Box with the Web UI**
 ![alt tag](https://raw.githubusercontent.com/icalvete/vagrant-ror-box/master/doc/createbox.jpg)
 4. Follow the instructions
