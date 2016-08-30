@@ -47,6 +47,10 @@ sudo apt-get update -y
 sudo apt-get --ignore-missing install nodejs -y
 
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+git clone https://github.com/ianheggie/rbenv-binstubs.git ~/.rbenv/plugins/rbenv-binstubs
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
@@ -54,17 +58,25 @@ echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 
 echo "gem: --no-document" > ~/.gemrc
 
-git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-
 . ~/.bashrc
 
-${HOME}/.rbenv/bin/rbenv install -v 2.2.3
-${HOME}/.rbenv/bin/rbenv global 2.2.3
+${HOME}/.rbenv/bin/rbenv install -v 2.2.5
+${HOME}/.rbenv/bin/rbenv install -v 2.3.1
+${HOME}/.rbenv/bin/rbenv global 2.3.1
+
+mkdir ~/.bundle/
+cat > ~/.bundle/config << EOL
+---
+BUNDLE_PATH: ~/vendor/bundle
+BUNDLE_DISABLE_SHARED_GEMS: "1"
+EOL
+
+~/.bundle/config
 
 ${HOME}/.rbenv/shims/gem install bundler
+
 # 4.2.3 version for Coursera course
-${HOME}/.rbenv/shims/gem install rails -v 4.2.3
-${HOME}/.rbenv/bin/rbenv rehash
+# ${HOME}/.rbenv/shims/gem install rails -v 4.2.3
 
 export PHANTOM_JS="phantomjs-1.9.8-linux-x86_64"
 cd /tmp
