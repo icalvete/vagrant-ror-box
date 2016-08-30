@@ -6,7 +6,7 @@ Creating my own vagrant box 4 Ruby on Rails development environment.
 
 The purpose of this box is create a Ruby on Rails development enviroment based on the settings of de script **_installing_ruby_on_rails_ubuntu_trusty.sh_**
 
-**Read the script carefully and feel free to customize whatever you want**
+**Read the script carefully and feel free to customize whatever you want.**
 
 At the end, the box offers...
 
@@ -130,6 +130,7 @@ $ bundle install --path vendor/bundle --binstubs .bundle/bin
 ```
 
 Since you have **_BUNDLE_PATH: ~/vendor/bundle_** inside your **_~/.bundle/config_** all gem instaled using gem will be instaled in **_~/vendor/bundle_** but ...
+
 Since you have **_BUNDLE_DISABLE_SHARED_GEMS: "1"_** inside your **_~/.bundle/config_** every app is a full isolated gem environment after you run...
 
 ```bash
