@@ -71,12 +71,12 @@ BUNDLE_PATH: ~/vendor/bundle
 BUNDLE_DISABLE_SHARED_GEMS: "1"
 EOL
 
-~/.bundle/config
+ . ~/.bundle/config
 
 ${HOME}/.rbenv/shims/gem install bundler
 
 # 4.2.3 version for Coursera course
-# ${HOME}/.rbenv/shims/gem install rails -v 4.2.3
+${HOME}/.rbenv/shims/gem install rails -v 4.2.3
 
 export PHANTOM_JS="phantomjs-1.9.8-linux-x86_64"
 cd /tmp

@@ -36,6 +36,7 @@ At this time settings are the [lasts version on heroku].(https://devcenter.herok
 
 * Ruby 2.2.5
 * Ruby 2.3.1 (Default as global)
+* Rails 4.2.3
 
 ## Run the box
 
@@ -126,6 +127,7 @@ config.vm.hostname = "ror"
 Then for each application directory run the following just once:
 
 ```bash
+$ rails new myapp --skip-bundle
 $ bundle install --path vendor/bundle --binstubs .bundle/bin
 ```
 
@@ -134,6 +136,7 @@ Since you have **_BUNDLE_PATH: ~/vendor/bundle_** inside your **_~/.bundle/confi
 Since you have **_BUNDLE_DISABLE_SHARED_GEMS: "1"_** inside your **_~/.bundle/config_** every app is a full isolated gem environment after you run...
 
 ```bash
+$ rails new myapp --skip-bundle
 $ bundle install --path vendor/bundle --binstubs .bundle/bin
 ```
 
