@@ -60,10 +60,11 @@ echo "gem: --no-document" > ~/.gemrc
 
 . ~/.bashrc
 
-${HOME}/.rbenv/bin/rbenv install -v 2.2.5
-${HOME}/.rbenv/bin/rbenv install -v 2.3.1
-${HOME}/.rbenv/bin/rbenv install -v 2.4.1
-${HOME}/.rbenv/bin/rbenv global 2.4.1
+${HOME}/.rbenv/bin/rbenv install -v 2.2.8
+${HOME}/.rbenv/bin/rbenv install -v 2.3.5
+${HOME}/.rbenv/bin/rbenv install -v 2.4.2
+${HOME}/.rbenv/bin/rbenv install -v 2.5.0-dev
+${HOME}/.rbenv/bin/rbenv global 2.4.2
 
 mkdir ~/.bundle/
 cat > ~/.bundle/config << EOL
@@ -77,7 +78,7 @@ EOL
 ${HOME}/.rbenv/shims/gem install bundler
 
 # 4.2.3 version for Coursera course
-${HOME}/.rbenv/shims/gem install rails -v 4.2.3
+${HOME}/.rbenv/shims/gem install rails -v 4.2.9
 
 export PHANTOM_JS="phantomjs-2.1.1-linux-x86_64"
 cd /tmp

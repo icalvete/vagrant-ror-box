@@ -34,10 +34,11 @@ Edit this script to customize your ruby instalation.
 
 At this time settings are the [lasts version on heroku].(https://devcenter.heroku.com/articles/ruby-support)
 
-* Ruby 2.2.5
-* Ruby 2.3.1
-* Ruby 2.4.1 (Default as global)
-* Rails 4.2.3
+* Ruby 2.2.8
+* Ruby 2.3.5
+* Ruby 2.5.0-dev
+* Ruby 2.4.2 (Default as global)
+* Rails 4.2.9
 
 ## Run the box
 
@@ -73,7 +74,7 @@ icalvete@dagon ~/vagrant-ror-box$ vagrant package --output ror.box
 
 ### Creating a new box
 
-You can add the box right now to your vagrant 
+You can add the box right now to your vagrant
 
 ### Loading the box
 
@@ -120,8 +121,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 # Every Vagrant virtual environment requires a box to build off of.
 config.vm.box = "icalvete/ror"
+config.vm.box_version = "<= 0.0.5"
 config.vm.hostname = "ror"
 ```
+
+## Box version
+
+There are some [versions](https://app.vagrantup.com/icalvete/boxes/ror) of this box.
 
 ## Way of working
 
