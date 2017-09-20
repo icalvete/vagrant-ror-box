@@ -35,7 +35,8 @@ Edit this script to customize your ruby instalation.
 At this time settings are the [lasts version on heroku].(https://devcenter.heroku.com/articles/ruby-support)
 
 * Ruby 2.2.5
-* Ruby 2.3.1 (Default as global)
+* Ruby 2.3.1
+* Ruby 2.4.1 (Default as global)
 * Rails 4.2.3
 
 ## Run the box
