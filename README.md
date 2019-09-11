@@ -36,9 +36,9 @@ At this time settings are the [lasts version on heroku].(https://devcenter.herok
 
 * Ruby 2.2.8
 * Ruby 2.3.5
-* Ruby 2.5.0-dev
-* Ruby 2.4.2 (Default as global)
-* Rails 4.2.9
+* Ruby 2.4.7
+* Ruby 2.5.6 (Default as global)
+* Rails 5.2.3
 
 ## Run the box
 

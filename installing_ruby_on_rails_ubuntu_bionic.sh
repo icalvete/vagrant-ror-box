@@ -9,7 +9,6 @@ sudo apt-get update -y
 sudo apt-get --ignore-missing install \
 build-essential \
 git \
-git-core \
 curl \
 openssl \
 libssl-dev \
@@ -17,15 +16,12 @@ libcurl4-openssl-dev \
 zlib1g \
 zlib1g-dev \
 libreadline-dev \
-libreadline6 \
-libreadline6-dev \
 libyaml-dev \
 libsqlite3-dev \
 libsqlite3-0 \
 sqlite3 \
 libxml2-dev \
 libxslt1-dev \
-python-software-properties \
 libffi-dev \
 libgdm-dev \
 libncurses5-dev \
@@ -39,7 +35,6 @@ libc6-dev \
 bzip2 \
 vim \
 software-properties-common \
-python-software-properties \
 -y
 
 sudo apt autoremove

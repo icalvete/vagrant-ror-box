@@ -10,8 +10,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "icalvete/ubuntu-14.04-64-puppet"
-  config.vm.box_version = "<= 0.0.3"
+  config.vm.box = "icalvete/ubuntu-16.04-64-puppet"
+  config.vm.box_version = "<= 0.0.4"
   config.vm.hostname = "ror"
 
   config.vm.network :public_network
