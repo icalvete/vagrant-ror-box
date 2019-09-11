@@ -37,7 +37,9 @@ At this time settings are the [lasts version on heroku].(https://devcenter.herok
 * Ruby 2.2.8
 * Ruby 2.3.5
 * Ruby 2.4.7
-* Ruby 2.5.6 (Default as global)
+* Ruby 2.5.6
+* Ruby 2.6.4 (Default as global)
+* Ruby 2.7.0-dev
 * Rails 5.2.3
 
 ## Run the box
@@ -121,7 +123,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 # Every Vagrant virtual environment requires a box to build off of.
 config.vm.box = "icalvete/ror"
-config.vm.box_version = "<= 0.0.5"
+config.vm.box_version = "<= 0.0.9"
 config.vm.hostname = "ror"
 ```
 

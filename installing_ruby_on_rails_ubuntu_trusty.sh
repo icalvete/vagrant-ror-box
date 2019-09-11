@@ -62,7 +62,9 @@ ${HOME}/.rbenv/bin/rbenv install -v 2.2.8
 ${HOME}/.rbenv/bin/rbenv install -v 2.3.5
 ${HOME}/.rbenv/bin/rbenv install -v 2.4.7
 ${HOME}/.rbenv/bin/rbenv install -v 2.5.6
-${HOME}/.rbenv/bin/rbenv global 2.5.6
+${HOME}/.rbenv/bin/rbenv install -v 2.6.4
+${HOME}/.rbenv/bin/rbenv install -v 2.7.0-dev
+${HOME}/.rbenv/bin/rbenv global 2.6.4
 
 mkdir ~/.bundle/
 cat > ~/.bundle/config << EOL
