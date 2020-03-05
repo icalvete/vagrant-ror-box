@@ -53,11 +53,11 @@ echo "gem: --no-document" > ~/.gemrc
 
 . ~/.bashrc
 
-${HOME}/.rbenv/bin/rbenv install -v 2.2.8
-${HOME}/.rbenv/bin/rbenv install -v 2.3.5
 ${HOME}/.rbenv/bin/rbenv install -v 2.4.7
-${HOME}/.rbenv/bin/rbenv install -v 2.5.6
-${HOME}/.rbenv/bin/rbenv global 2.5.6
+${HOME}/.rbenv/bin/rbenv install -v 2.5.7
+${HOME}/.rbenv/bin/rbenv install -v 2.6.5
+${HOME}/.rbenv/bin/rbenv install -v 2.7.0
+${HOME}/.rbenv/bin/rbenv global 2.6.5
 
 mkdir ~/.bundle/
 cat > ~/.bundle/config << EOL
